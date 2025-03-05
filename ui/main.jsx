@@ -35,15 +35,15 @@ export function TodoList(props) {
       ToDo.find({name: props.name}, {sort: {created: sort()}}));
   // Display
   let itemInput;
-  function onAdd(e) {
+  async function onAdd(e) {
     e.preventDefault();
-    Meteor.call('todo.add', props.name, itemInput.value);
+    await Meteor.callAsync('todo.add', props.name, itemInput.value);
     itemInput.value = '';
   }
-  function onDelete(e) {
+  async function onDelete(e) {
     const button = e.currentTarget;
     const row = button.parentNode.parentNode;
-    Meteor.call('todo.del', row.dataset.id);
+    await Meteor.callAsync('todo.del', row.dataset.id);
   }
   return <div>
     <h2>To-Do List for {props.name}
