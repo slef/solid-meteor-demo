@@ -16,7 +16,7 @@ server-render@0.4.2                 # Support for server-side rendering
 #typescript                   # Enable TypeScript syntax in .ts and .tsx modules
 #coffeescript
 coffeescript-compiler
-sl:solid-meteor3              # Replaces ecmascript, typescript, coffeescript
+slef:solid-meteor3              # Replaces ecmascript, typescript, coffeescript
 session@1.2.2
 autoupdate@2.0.0
 mongo@2.0.0

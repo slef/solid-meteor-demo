@@ -8,7 +8,7 @@ It has been updated to work with Meteor 3.
 
 It demonstrates the use of two libraries:
 
-* [`sl:solid-meteor3` package](https://github.com/yourusername/solid-meteor3) (a fork of [`edemaine:solid`](https://github.com/edemaine/meteor-solid))
+* [`slef:solid-meteor3` package](https://github.com/slef/meteor-solid/tree/meteor3-compatibility) (a fork of [`edemaine:solid`](https://github.com/edemaine/meteor-solid))
   enables the SolidJS compiler for JSX notation, including SSR, and is compatible with Meteor 3.
 * [`solid-meteor-data` on NPM](https://github.com/edemaine/solid-meteor-data/)
   provides helper functions for Meteor reactivity within SolidJS.
@@ -17,7 +17,7 @@ It demonstrates the use of two libraries:
 
 This project has been updated to be compatible with Meteor 3, with the following changes:
 
-1. Created a fork of `edemaine:solid` called `sl:solid-meteor3` with Meteor 3 compatibility
+1. Created a fork of `edemaine:solid` called `slef:solid-meteor3` with Meteor 3 compatibility
 2. Updated MongoDB methods to use async versions (insertAsync, removeAsync)
 3. Updated Meteor method calls to use callAsync instead of call
 4. Updated package dependencies to newer versions
